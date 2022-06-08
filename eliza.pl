@@ -44,8 +44,8 @@ is_related_to_theme(Tema, [Palavra|Tail]) :-
  */
 
 append_topic(Tema, Mensagem, AppendedMensagem) :-
-    append_message(Tema, Anexo),
-    append(Anexo, Mensagem, AppendedMensagem).
+    	append_message(Tema, Anexo),
+    	append(Anexo, Mensagem, AppendedMensagem).
 
 /*
  * Por tentativa e erro, itera pelos temas declarados.
@@ -53,10 +53,10 @@ append_topic(Tema, Mensagem, AppendedMensagem) :-
  */
 
 append_to_response(Resposta, AppendedResposta) :-
-    theme(X),
-    is_related_to_theme(X, Resposta),
-    append_topic(X, Resposta, AppendedResposta),
-    !.
+    	theme(X),
+    	is_related_to_theme(X, Resposta),
+    	append_topic(X, Resposta, AppendedResposta),
+    	!.
 
 /*
  * Caso a Resposta não estiver relacionada a nenhum tema declarado,
@@ -70,8 +70,8 @@ append_to_response(Resposta, Resposta).
  */
 
 eliza(Stimuli, [i, do, not, answer, stimuli, with, sensible, words]) :-
-    is_related_to_theme(sensible, Stimuli),
-    !.
+    	is_related_to_theme(sensible, Stimuli),
+    	!.
 
 /*
  * Por tentativa e erro, procura algum template que dê match.
