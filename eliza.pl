@@ -149,11 +149,9 @@ w(X): Apenas uma palavra
  */
 
 random_answer([i, do]) :-
-    random(1, 3, X),
-    X = 1.
-
-/*
- * Caso padrão. Como se fosse um else.
- */
-
+    random(1, 4, 1),
+    !.
+random_answer([maybe]) :-
+    random(1, 4, 2),
+    !.
 random_answer([i, do, not]).
