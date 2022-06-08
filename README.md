@@ -21,5 +21,5 @@ Usando a seguinte função, declare um template cuja resposta seja aleatória.
 
 Sobre a função random_member: https://www.swi-prolog.org/pldoc/man?predicate=random_member/2
 ```
-random_member(RandomMember, [[i, do], [i, do, not], [maybe]]).
+?- random_member(RandomMember, [[i, do], [i, do, not], [maybe]]).
 ```
