@@ -8,7 +8,7 @@ Em nosso trabalho, focamos em desenvolver novas funcionalidades em uma aplicaç�
 
 ## Verificador de CPF
 
-Criamos um verificador de CPF, usando recursão e "pattern matching".
+Verificador de CPF, usando recursão e "pattern matching".
 
 ###### 
 
@@ -22,7 +22,10 @@ Usando o seguinte predicato. Declare um template cuja resposta seja aleatória.
 Sobre a função random: [https://www.swi-prolog.org/pldoc/man?predicate=random/3]
 ```
 random_answer([i, do]) :-
-    random(1, 3, X),
-    X = 1.
+    random(1, 4, 1),
+    !.
+random_answer([maybe]) :-
+    random(1, 4, 2),
+    !.
 random_answer([i, do, not]).
 ```
