@@ -49,7 +49,7 @@ append_topic(Tema, Mensagem, AppendedMensagem) :-
 
 /*
  * Por tentativa e erro, itera pelos temas declarados.
- * Verifica se a Resposta está relacionada a alguma tema X.
+ * Verifica se a Resposta está relacionada a algum tema X.
  */
 
 append_to_response(Resposta, AppendedResposta) :-
@@ -83,7 +83,7 @@ eliza(Stimuli, AppendedResponse) :-
    	template(InternalStimuli, InternalResponse),
 	match(InternalStimuli, Stimuli),
 	match(InternalResponse, Response),
-    append_to_response(Response, AppendedResponse),
+    	append_to_response(Response, AppendedResponse),
 	!.
 
 /*
