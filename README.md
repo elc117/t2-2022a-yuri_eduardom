@@ -20,7 +20,7 @@ Eliza responde a estímulos do usuário. Alguns templates de estímulos foram de
 
 Usando o seguinte predicato. Declare um template cuja resposta seja aleatória.
 
-Sobre a função random: [https://www.swi-prolog.org/pldoc/man?predicate=random/3]
+Sobre a função random: https://www.swi-prolog.org/pldoc/man?predicate=random/3
 ```
 random_answer([i, do]) :-
     random(1, 4, 1),
