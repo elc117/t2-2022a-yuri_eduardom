@@ -125,13 +125,13 @@ match(s([Word|Seg]), Items, Word, Words0) :-
 	append(Seg, Words1, Words0),
 	match(Items, Words1).
 
-/** <examplos>
+/** <exemplos>
 
 s(X): Qualquer sequencia de palavras separadas por virgula
 w(X): Apenas uma palavra
 
 ?- eliza([w(Pronome_pessoal), w(Verbo_to_be), s(X)], Response).
-	?- eliza([you, are, beautiful)
+	?- eliza([you, are, beautiful], Response).
 ?- eliza([w(Pronome_possessivo), w(X), w(Verbo_to_be), s(Y)], Response).
 	?- eliza([my, car, is, fast], Response).
 ?- eliza([do, w(Pronome_pessoal), s(X), w(X), ?], Response).
