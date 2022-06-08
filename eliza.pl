@@ -145,7 +145,7 @@ w(X): Apenas uma palavra
 /*
  * EXERCÍCIO PROPOSTO:
  * Usando a seguinte função, declare um template cuja resposta seja aleatória.
- * Sobre a função random: https://www.swi-prolog.org/pldoc/doc_for?object=random_member/2
+ * Sobre a função random_member: https://www.swi-prolog.org/pldoc/doc_for?object=random_member/2
  * Exemplo: random_member(RandomMember, [[i, do], [i, do, not], [maybe]]).
  */
 
