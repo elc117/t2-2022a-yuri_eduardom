@@ -7,7 +7,7 @@
 Em nosso trabalho, focamos em desenvolver novas funcionalidades em uma aplicação de IA, chamada Eliza Chatbot. Além disso, desenvolvemos um verificador de CPF.
 
 ## Verificador de CPF
-O Verificador de CPF em Prolog teve como inspiração o exemplo passado em aula pela professora, utilizando Haskell. Em seu desenvolvimento foram utilizados diferentes recursos, tais como recursão e "pattern matching". Na execução, o usuário deve informar um CPF através de uma lista, e então será retornado True or False.
+O Verificador de CPF em Prolog teve como inspiração o exemplo passado em aula pela professora, utilizando Haskell. Em seu desenvolvimento foram utilizados diferentes recursos, tais como recursão. Na execução, o usuário deve informar um CPF através de uma lista, e então será retornado True or False.
 
 ###### 
 
